@@ -1,6 +1,6 @@
 use anchor_lang::prelude::*;
 
-declare_id!("<PLACE YOUR ADDRESS HERE>");
+declare_id!("B9hsctiAcPfVWoQa7B59smakdyr9HbXXpkhdpnRbshNi");
 
 #[program]
 pub mod todo_list_app {
@@ -47,10 +47,6 @@ pub mod todo_list_app {
         Ok(())
        
     }
-
-
-
-
 }
 
 #[derive(Accounts)]
@@ -101,7 +97,6 @@ impl Task {
         TIMESTAMP_LENGTH + // created_at
         TIMESTAMP_LENGTH; // updated_at
 }
-
 
 #[error_code]
 pub enum ErrorCode {

@@ -4,7 +4,7 @@ import { TodoListApp } from "../target/types/todo_list_app";
 import { assert } from "chai";
 
 describe("todo-list-app", () => {
-  // Configure the client to use the local cluster.
+  // Configure the client to use the local cluster. 
   anchor.setProvider(anchor.AnchorProvider.env());
   const program = anchor.workspace.TodoListApp as Program<TodoListApp>;
   const author = program.provider as anchor.AnchorProvider;
